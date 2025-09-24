@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <locale.h>
+int main() {
+    
+    float A, B, K;
+    float wall_area;
+    int rolls_needed;
+    float total_cost;
+    setlocale(LC_CTYPE, "RUS")
+    // Расчет площади стены
+    wall_area = A * B;
+    
+    rolls_needed = (int)(wall_area / 12.0);
+    
+    // Расчет стоимости
+    total_cost = rolls_needed * K;
+    
+    // Вывод результата
+    printf("рассчет стоимости обоев:\n");
+    printf("длина стены: %.1f m\n", A);
+    printf("высота стены: %.1f m\n", B);
+    printf("цена рулона: %.0f rub\n", K);
+    printf("площадь стены: %.2f m2\n", wall_area);
+    printf("нужно рулонов: %d\n", rolls_needed);
+    printf("общая стоимость: %.2f rub.\n", total_cost);
+    
+   
+}
